@@ -1,0 +1,57 @@
+<!--
+	Name: Your Name
+	File: index.html
+	Date: 22 September 2023
+	Description: This HTML file is for a 'Silly Story Generator'. It includes input fields for user interaction, radio buttons for selecting units, and a button to generate the story. Styling is defined within the head for layout and visual presentation.
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Silly story generator</title>
+    <style>
+        /* Basic layout styles maintained */
+        body {
+            font-family: helvetica, sans-serif;
+            width: 350px;
+        }
+        label {
+            font-weight: bold;
+        }
+        div {
+            padding-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            width: 150px;
+        }
+        p {
+            background: #ffc125; /* Light yellow background */
+            color: #e60d0d; /* Changed to red for contrast */
+            padding: 10px;
+            visibility: hidden; /* Hidden, to be shown with JS */
+        }
+    </style>
+</head>
+<body>
+    <!-- Same form structure for user inputs -->
+    <div>
+        <label for="customname">Enter custom name:</label>
+        <input id="customname" type="text" placeholder="" />
+    </div>
+    <div>
+        <label for="us">US</label>
+        <input id="us" type="radio" name="ukus" value="us" checked />
+        <label for="uk">UK</label>
+        <input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+        <button class="randomize">Generate random story</button>
+    </div>
+    <p class="story"></p>
+    <!-- JavaScript file added for interactivity -->
+    <script src="main.js"></script>
+</body>
+</html>

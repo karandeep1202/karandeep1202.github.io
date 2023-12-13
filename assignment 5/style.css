@@ -1,0 +1,245 @@
+/* General setup for HTML and Body elements */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting base font size for HTML and a default background color */
+html {
+  font-size: 10px;
+  background-color: rgb(84, 84, 92);
+}
+
+/* Setting default width and alignment for the body */
+body {
+  width: 80%;
+  min-width: 1024px;
+  margin: 0 auto;
+}
+
+/* Typography settings for headers, paragraphs, inputs, list items, tables, and labels */
+h1, h2, h3, p, input, li, table, label {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+/* Specific styling for h1 elements */
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  font-family: 'Sonsie One', cursive;
+}
+
+/* Specific styling for h2 elements */
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Sonsie One', cursive;
+}
+
+/* Specific styling for h3 elements */
+h3 {
+  font-size: 2.2rem;
+  font-family: 'Sonsie One', cursive;
+}
+
+/* Styling for paragraphs, list items, and tables */
+p, li, table {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* Header layout styling */
+nav, article, footer, .secondary {
+  background-color: rgb(224, 205, 221);
+}
+
+article, footer, .secondary {
+  padding: 10px 30px;
+}
+
+article {
+  margin-right: 10px;
+}
+
+/* Navigation bar styling */
+nav {
+  height: 50px;
+  background-color: rgba(189, 6, 6, 0.637);
+  display: flex;
+  padding: 1% 0;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+/* Search input styling */
+.search input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+.search input[type="search"] {
+  flex: 3;
+}
+
+.search input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+/* Main layout styling */
+main {
+  display: flex;
+}
+
+article {
+  flex: 5;
+}
+
+.secondary {
+  flex: 2;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  background-color: #dde;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+th[scope="col"] {
+  border-bottom: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #def;
+}
+
+/* Styling for content images and audio elements */
+img, audio {
+  display: block;
+  margin: 0 auto;
+}
+
+audio {
+  width: 500px;
+}
+
+/* Comments section styling */
+.comments {
+  background-color: #def;
+  padding: 10px;
+}
+
+.show-hide {
+  cursor: pointer;
+  text-align: center;
+  width: 150px;
+  font-size: 1.6rem;
+  line-height: 32px;
+  background: #333;
+  border: 0;
+  color: white;
+  display: inline-block; /* to make it focusable */
+}
+
+.comment-form {
+  margin-bottom: 3rem;
+}
+
+.comment-form .flex-pair {
+  display: flex;
+  padding: 0 3rem 1rem;
+}
+
+.comment-form label {
+  align-self: center;
+  flex: 2;
+  text-align: right;
+}
+
+.comment-form input {
+  margin-left: 1rem;
+  flex: 6;
+}
+
+.comment-form input[type="submit"] {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.comment-container {
+  margin-top: 0;
+}
+
+.comment-container li {
+  list-style-type: none;
+  display: flex;
+}
+
+.comment-container li p:first-child {
+  flex: 1;
+  font-weight: bold;
+}
+
+.comment-container li p:last-child {
+  flex: 5;
+}
+
+/* Accessibility improvements for visually hidden elements */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

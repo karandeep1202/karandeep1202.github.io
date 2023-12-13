@@ -1,0 +1,38 @@
+/* Global Styles */
+html, body {
+  margin: 0; /* Removes default margin from the html and body elements */
+  height: 100%; /* Sets the height of the html and body elements to fill the entire viewport */
+}
+
+/* Body Styles */
+body {
+  overflow: hidden; /* Hides any content that overflows the body element */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Sets the default font family with Helvetica Neue as primary and fallbacks */
+}
+
+/* Canvas Styles */
+canvas {
+  width: 100%; /* Sets the canvas width to fill its container */
+  height: 100%; /* Sets the canvas height to fill its container */
+}
+
+/* Heading 1 (h1) Styles */
+h1 {
+  font-size: 2rem; /* Sets the font size to 2 times the root font size */
+  letter-spacing: -1px; /* Reduces spacing between characters for a tighter look */
+  position: absolute; /* Positions the h1 element absolutely relative to its nearest positioned ancestor */
+  margin: 0; /* Removes default margin */
+  top: 10px; /* Positions the h1 element 10 pixels from the top of its container */
+  left: 10px; /* Positions the h1 element 10 pixels from the left of its container */
+  color: rgb(165, 20, 20); /* Sets the text color to a dark red */
+}
+
+/* Paragraph (p) Styles */
+p {
+  position: absolute; /* Positions the paragraph absolutely relative to its nearest positioned ancestor */
+  margin: 0; /* Removes default margin */
+  top: 50px; /* Positions the paragraph 50 pixels from the top of its container */
+  left: 10px; /* Positions the paragraph 10 pixels from the left of its container */
+  color: white; /* Sets the text color to white */
+  font-size: 1rem; /* Sets the font size to the root font size */
+}
